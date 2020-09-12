@@ -24,7 +24,7 @@ def output_array(array)
 end
 
 def return_string_array(array)
-  newArr = Array.new
+  newArr = Array.new(array.length)
   
   array.each do |i|
     newArr[i] = array[i]
