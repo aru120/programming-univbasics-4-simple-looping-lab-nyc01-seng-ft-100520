@@ -24,10 +24,11 @@ def output_array(array)
 end
 
 def return_string_array(array)
-  newArr = Array.new(array.length)
-  
-  array.each do |i|
-    newArr[i] = array[i]
-  end
-  return newArr
-end
+ count = 0
+ 
+ while count < array.length do
+   array[count] = array[count].to_s
+   count += 1
+ end
+ return array
+ end
